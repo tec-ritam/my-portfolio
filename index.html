@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Ritam Bhoumik's developer portfolio showcasing skills, projects, and experiences in Java, Web Development, and OOP."/>
+  <title>Ritam | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="curRing"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="logo">Ritam.</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certificates">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav-backdrop" id="mobileNavBackdrop" onclick="closeMobileNav()"></div>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#skills" onclick="closeMobileNav()">Skills</a>
+  <a href="#projects" onclick="closeMobileNav()">Projects</a>
+  <a href="#certificates" onclick="closeMobileNav()">Certificates</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-tag">
+    <span class="status-dot"></span>
+    Available for opportunities
+  </div>
+  <h1>
+    Building <span id="typed-text" style="font-family:'Instrument Serif',serif;font-style:italic;color:var(--accent);"></span><br/>
+    experiences<br/>
+    that matter.
+  </h1>
+  <p class="hero-sub">
+    <strong>BCA student</strong> at Brainware University &nbsp;·&nbsp;
+    <strong>Java & OOP</strong> enthusiast &nbsp;·&nbsp;
+    Passionate about clean code and creative solutions.
+  </p>
+  <div class="hero-btns">
+    <a href="#projects" class="btn-primary">View My Work →</a>
+    <a href="#contact" class="btn-secondary">Get In Touch</a>
+    <a href="https://drive.google.com/file/d/17HomoFFE7atnHoKQ_m1QRoerOWU-dCPV/view?usp=sharing" class="btn-cv" target="_blank" rel="noopener" aria-label="Download Ritam CV">⬇ Download CV</a>
+  </div>
+  <div class="scroll-hint">
+    scroll down
+    <span></span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">01 — About</div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <h2>A developer<br/>who loves to<br/><em style="font-family:'Instrument Serif',serif;color:var(--accent)">build things.</em></h2>
+      <p>
+        I'm <strong>Ritam</strong>, a BCA student at <strong>Brainware University</strong>, currently
+        in my 4th semester diving deep into Object-Oriented Programming in Java and building real-world
+        applications that solve real problems.
+      </p>
+      <p>
+        I believe in writing code that is not just functional, but <strong>clean, readable,
+        and elegant</strong>. When I'm not coding, you'll find me exploring new technologies,
+        working on creative projects, or leveling up my communication skills.
+      </p>
+      <p>
+        My goal? To become a <strong>full-stack developer</strong> who bridges beautiful design
+        with powerful backend systems.
+      </p>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Years of Coding</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Languages Known</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Curiosity Level</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-right reveal">
+      <h3 style="font-family:'Syne',sans-serif;font-weight:700;margin-bottom:1rem;font-size:1rem;letter-spacing:.05em;">Tech Stack</h3>
+      <div class="tech-list">
+        <span class="tech-tag">Java</span>
+        <span class="tech-tag">OOP</span>
+        <span class="tech-tag">C</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">PHP</span>
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">HTML/CSS</span>
+        <span class="tech-tag">Tailwind CSS</span>
+        <span class="tech-tag">MySQL</span>
+        <span class="tech-tag">Git</span>
+        <span class="tech-tag">GitHub</span>
+        <span class="tech-tag">VS Code</span>
+        <span class="tech-tag">IntelliJ IDEA</span>
+        <span class="tech-tag">Data Structures</span>
+        <span class="tech-tag">Recursion</span>
+      </div>
+
+      <div class="currently-learning">
+        <div class="learning-label">🔭 Currently Learning</div>
+        <div class="learning-items">
+          <span class="learning-badge">React.js</span>
+          <span class="learning-badge">REST APIs</span>
+          <span class="learning-badge">JDBC</span>
+          <span class="learning-badge">Tailwind CSS</span>
+        </div>
+      </div>
+
+      <div style="margin-top:3rem;">
+        <h3 style="font-family:'Syne',sans-serif;font-weight:700;margin-bottom:1.2rem;font-size:1rem;letter-spacing:.05em;">Education</h3>
+        <div style="border-left:2px solid var(--border);padding-left:1.5rem;display:flex;flex-direction:column;gap:1.5rem;">
+          <div>
+            <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;">BCA — Bachelor of Computer Application</div>
+            <div style="color:var(--accent);font-size:.78rem;margin:.2rem 0;">Brainware University</div>
+            <div style="color:var(--muted);font-size:.75rem;">2023 – Present &nbsp;·&nbsp; 4th Semester</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">02 — Skills</div>
+  <h2>What I <span style="font-family:'Instrument Serif',serif;font-style:italic;color:var(--accent2)">bring</span><br/>to the table.</h2>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-icon">☕</div>
+      <div class="skill-name">Java & OOP</div>
+      <div class="skill-desc">Classes, inheritance, polymorphism, encapsulation, abstraction, exception handling, collections & ArrayList.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:0" data-width="85%"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🌐</div>
+      <div class="skill-name">Web Development</div>
+      <div class="skill-desc">HTML5, CSS3, Tailwind CSS, JavaScript ES6+, Node.js. Building responsive, fast, and accessible web interfaces.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:0" data-width="78%"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🔢</div>
+      <div class="skill-name">Data Structures & Algorithms</div>
+      <div class="skill-desc">Arrays, linked lists, stacks, queues, recursion, backtracking — implemented in C and Java.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:0" data-width="72%"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🗃️</div>
+      <div class="skill-name">Databases</div>
+      <div class="skill-desc">MySQL fundamentals, CRUD operations, relational design, connecting databases with Java (JDBC).</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:0" data-width="65%"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🔧</div>
+      <div class="skill-name">Tools & Workflow</div>
+      <div class="skill-desc">Git, GitHub, VS Code, IntelliJ IDEA, command line. Version control and collaborative dev workflows.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:0" data-width="80%"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🐍</div>
+      <div class="skill-name">Python</div>
+      <div class="skill-desc">Scripting, automation, file handling, working with libraries for data processing and utilities.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:0" data-width="60%"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🐘</div>
+      <div class="skill-name">PHP</div>
+      <div class="skill-desc">Server-side scripting, array operations, form handling, working with dynamic web content.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:0" data-width="55%"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🎨</div>
+      <div class="skill-name">UI / Design Sense</div>
+      <div class="skill-desc">Dark-themed interfaces, component design, responsive layouts — clean aesthetics with purposeful structure.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" style="width:0" data-width="70%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS (GitHub API) -->
+<section id="projects">
+  <div class="section-label">03 — Projects</div>
+  <div class="projects-header">
+    <h2 style="margin-bottom:0;">Things I've <span style="font-family:'Instrument Serif',serif;font-style:italic;color:var(--accent)">built.</span></h2>
+    <a href="https://github.com/tec-ritam" target="_blank" class="gh-link">
+      ⬡ View All on GitHub
+    </a>
+  </div>
+  <div class="projects-grid" id="projectsGrid">
+    <a href="https://forgefit-ritam.netlify.app" target="_blank" rel="noopener noreferrer" class="project-card reveal tilt-card">
+      <div class="project-top">
+        <span class="project-icon">🔥</span>
+        <span class="project-stars">★ Featured</span>
+      </div>
+      <div class="project-name">ForgeFit — AI Gym Progress Tracker</div>
+      <div class="project-desc">Uses AI to analyze progress photos, track workouts, and keep you accountable in a beautiful dashboard.</div>
+      <div class="project-footer">
+        <span class="lang-badge" style="color:var(--accent2)">Live App</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </a>
+    <p class="loading-text" id="ghLoading">// Loading projects from GitHub...</p>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="section-label">04 — Certificates & Achievements</div>
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:3rem;">
+    <h2 style="margin-bottom:0;">Recognition &<br/><span style="font-family:'Instrument Serif',serif;font-style:italic;color:var(--accent3)">learning.</span></h2>
+    <a href="https://drive.google.com/file/d/17HomoFFE7atnHoKQ_m1QRoerOWU-dCPV/view?usp=sharing" target="_blank" rel="noopener" class="btn-cv" style="display:inline-flex;align-items:center;gap:.5rem;white-space:nowrap;" aria-label="Download Ritam CV">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download CV
+    </a>
+  </div>
+  <div class="certs-grid">
+
+    <!-- Add real certificates below — clone and fill these cards -->
+
+    <div class="cert-card reveal">
+      <div class="cert-issuer">Cisco Networking Academy</div>
+      <div class="cert-name">Python Essentials 1</div>
+      <div class="cert-date">03 Aug 2026</div>
+      <span class="cert-badge">✦ Certificate</span>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-issuer">Cisco Networking Academy</div>
+      <div class="cert-name">Introduction to Data Science</div>
+      <div class="cert-date">03 Aug 2026</div>
+      <span class="cert-badge">✦ Certificate</span>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-issuer">Cisco Networking Academy</div>
+      <div class="cert-name">CyberOps Associate</div>
+      <div class="cert-date">20 Feb 2026</div>
+      <span class="cert-badge">✦ Certificate</span>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-issuer">Brainware University</div>
+      <div class="cert-name">Object Oriented Programming in Java</div>
+      <div class="cert-date">2024 — Ongoing (4th Semester)</div>
+      <span class="cert-badge">✦ Academic</span>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-issuer">Personal Project</div>
+      <div class="cert-name">Library Management System (Java)</div>
+      <div class="cert-date">2024</div>
+      <span class="cert-badge">✦ Project</span>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-issuer">Personal Project</div>
+      <div class="cert-name">Developer Portfolio — GitHub Pages</div>
+      <div class="cert-date">2025</div>
+      <span class="cert-badge">✦ Deployed</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">05 — Contact</div>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <h2>Let's build<br/><span style="font-family:'Instrument Serif',serif;font-style:italic;color:var(--accent)">something</span><br/>together.</h2>
+      <p>
+        Whether you have a project in mind, want to collaborate on something cool,
+        or just want to say hi — my inbox is always open.
+      </p>
+      <div class="social-links">
+        <a href="https://github.com/tec-ritam" target="_blank" class="social-link">
+          <div class="s-icon">GH</div>
+          github.com/tec-ritam
+        </a>
+        <a href="https://linkedin.com/in/ritam-bhoumik-4812943aa" target="_blank" class="social-link">
+          <div class="s-icon">in</div>
+          LinkedIn Profile
+        </a>
+        <a href="mailto:britam0099@gmail.com" class="social-link">
+          <div class="s-icon">@</div>
+                                      britam0099@gmail.com        </a>
+      </div>
+    </div>
+    <form id="contactForm" class="reveal">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" id="fname" placeholder="Your name" required/>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="femail" placeholder="your@email.com" required/>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea id="fmsg" placeholder="Tell me about your project..." required></textarea>
+      </div>
+      <button type="submit" class="form-submit">Send Message →</button>
+      <div class="form-msg" id="formMsg"></div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Ritam · Built with 💚 and clean code</p>
+  <p>Designed & Developed by <a href="#hero">Ritam Bhoumik</a></p>
+</footer>
+
+<script>
+  /* ── MOBILE NAV ── */
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click',()=>{
+    hamburger.classList.toggle('active');
+    mobileNav.classList.toggle('open');
+  });
+  function closeMobileNav(){
+    hamburger.classList.remove('active');
+    mobileNav.classList.remove('open');
+  }
+
+  /* ── CURSOR ── */
+  const cur = document.getElementById('cur');
+  const ring = document.getElementById('curRing');
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',e=>{
+    mx=e.clientX; my=e.clientY;
+    cur.style.left=(mx-5)+'px'; cur.style.top=(my-5)+'px';
+  });
+  (function animRing(){
+    rx+=(mx-rx-18)*.1; ry+=(my-ry-18)*.1;
+    ring.style.left=rx+'px'; ring.style.top=ry+'px';
+    requestAnimationFrame(animRing);
+  })();
+
+  /* ── SCROLL REVEAL ── */
+  const ro = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('revealed'); }
+    });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+
+  /* ── SKILL BARS ── */
+  const barObs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.querySelectorAll('.skill-bar').forEach(b=>{
+          b.style.width = b.dataset.width;
+        });
+      }
+    });
+  },{threshold:.25});
+  document.querySelectorAll('.skill-card').forEach(c=>barObs.observe(c));
+
+  /* ── GITHUB PROJECTS ── */
+  const GH_USERNAME = 'tec-ritam';
+  const langColors = {
+    JavaScript:'#f7df1e',Java:'#b07219',Python:'#3572A5',
+    C:'#555555',HTML:'#e34c26',CSS:'#563d7c',
+    TypeScript:'#2b7489',PHP:'#4f5d95',Shell:'#89e051'
+  };
+
+  async function loadGitHubProjects(){
+    const grid = document.getElementById('projectsGrid');
+    try{
+      const res = await fetch(`https://api.github.com/users/${GH_USERNAME}/repos?sort=updated&per_page=12`);
+      if(!res.ok) throw new Error('GitHub API error');
+      const repos = await res.json();
+      const filtered = repos.filter(r=>!r.fork).slice(0,6);
+      document.getElementById('ghLoading').remove();
+      if(filtered.length === 0){
+        grid.innerHTML = '<p class="error-text">// No public repositories found yet.</p>';
+        return;
+      }
+      filtered.forEach(repo=>{
+        const color = langColors[repo.language] || '#888';
+        const card = document.createElement('a');
+        card.className = 'project-card reveal';
+        card.href = repo.html_url;
+        card.target = '_blank';
+        card.rel = 'noopener noreferrer';
+        card.innerHTML = `
+          <div class="project-top">
+            <span class="project-icon">📁</span>
+            <span class="project-stars">★ ${repo.stargazers_count}</span>
+          </div>
+          <div class="project-name">${repo.name}</div>
+          <div class="project-desc">${repo.description || 'No description provided.'}</div>
+          <div class="project-footer">
+            <span class="lang-badge" style="color:${color}">${repo.language || 'Unknown'}</span>
+            <span class="project-arrow">→</span>
+          </div>
+        `;
+        grid.appendChild(card);
+        ro.observe(card);
+        if(window.VanillaTilt) {
+          VanillaTilt.init(card, { max: 5, speed: 400, glare: true, "max-glare": 0.05, scale: 1.02 });
+        }
+      });
+    }catch(err){
+      const loader = document.getElementById('ghLoading');
+      if(loader) loader.innerHTML = '// Could not load GitHub projects. <a href="https://github.com/tec-ritam" target="_blank" style="color:var(--accent2)">View on GitHub →</a>';
+    }
+  }
+  loadGitHubProjects();
+
+  /* ── CONTACT FORM ── */
+  document.getElementById('contactForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    const msg = document.getElementById('formMsg');
+    const name = document.getElementById('fname').value.trim();
+    const email = document.getElementById('femail').value.trim();
+    const message = document.getElementById('fmsg').value.trim();
+
+    if(!name || !email || !message){
+      msg.className = 'form-msg error';
+      msg.textContent = '✗ Please fill in all fields.';
+      return;
+    }
+
+    // Open mailto as fallback — wire to Formspree or EmailJS for production
+    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+    window.location.href = `mailto:britam0099@gmail.com?subject=${subject}&body=${body}`;
+
+    msg.className = 'form-msg success';
+    msg.textContent = 'Thank you, I will contact with you as soon as possible';
+    this.reset();
+  });
+
+  /* ── MOBILE NAV BACKDROP ── */
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileNavBackdrop').classList.toggle('active');
+  });
+  const originalClose = closeMobileNav;
+  closeMobileNav = function() {
+    originalClose();
+    document.getElementById('mobileNavBackdrop').classList.remove('active');
+  };
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script>
+  /* ── TYPED.JS ── */
+  new Typed('#typed-text', {
+    strings: ['digital', 'premium', 'interactive', 'creative'],
+    typeSpeed: 80,
+    backSpeed: 40,
+    backDelay: 1500,
+    loop: true,
+    showCursor: false
+  });
+
+  /* ── VANILLA TILT ── */
+  VanillaTilt.init(document.querySelectorAll(".stat-card, .skill-card, .cert-card, .project-card, .about-right"), {
+    max: 5,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.05,
+    scale: 1.02
+  });
+</script>
+</body>
+</html>
