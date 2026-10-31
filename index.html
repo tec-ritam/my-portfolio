@@ -12,9 +12,11 @@
 </head>
 <body>
 
-<!-- Custom Cursor -->
-<div class="cursor" id="cur"></div>
-<div class="cursor-ring" id="curRing"></div>
+<!-- Custom Cursor (Loopstack glassmorphism) -->
+<div id="ls-cursor-ring" class="ls-cursor-ring"></div>
+<div id="ls-glass-card" class="ls-glass-card">
+    <span class="ls-cursor-text"><span class="text-white">Say</span> Hello!</span>
+</div>
 
 <!-- NAV -->
 <nav>
@@ -150,7 +152,7 @@
           <div>
             <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;">BCA — Bachelor of Computer Application</div>
             <div style="color:var(--accent);font-size:.78rem;margin:.2rem 0;">Brainware University</div>
-            <div style="color:var(--muted);font-size:.75rem;">2023 – Present &nbsp;·&nbsp; 4th Semester</div>
+            <div style="color:var(--muted);font-size:.75rem;">2024 – Present &nbsp;·&nbsp; 5th Semester</div>
           </div>
         </div>
       </div>
@@ -224,6 +226,19 @@
     </a>
   </div>
   <div class="projects-grid" id="projectsGrid">
+    <a href="https://pixverse-gallery.netlify.app" target="_blank" rel="noopener noreferrer" class="project-card reveal tilt-card">
+      <div class="project-top">
+        <span class="project-icon">📸</span>
+        <span class="project-stars">★ Featured</span>
+      </div>
+      <div class="project-name">PixVerse — Cloud Photo Gallery</div>
+      <div class="project-desc">Full-stack photo gallery web app with multi-user isolation, Supabase Postgres & Storage, photo editor, album management, and timeline views.</div>
+      <div class="project-footer">
+        <span class="lang-badge" style="color:var(--accent2)">Live App</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </a>
+
     <a href="https://forgefit-ritam.netlify.app" target="_blank" rel="noopener noreferrer" class="project-card reveal tilt-card">
       <div class="project-top">
         <span class="project-icon">🔥</span>
@@ -335,6 +350,64 @@
   </div>
 </section>
 
+<!-- LOOPSTACK SHOWCASE -->
+<section id="loopstack">
+  <div class="section-label" style="position:relative;z-index:4;padding:1rem 6vw 0;">06 — Showcase</div>
+
+  <!-- Gradient overlay -->
+  <img src="https://api.getlayers.ai/storage/v1/object/public/public/assets/loopstack-f8c64439bf/black_gradient.svg" alt="" id="loopstack-gradient">
+
+  <!-- Hero content -->
+  <div class="ls-hero-content">
+    <h3 class="ls-hero-title">Apply Now to be part <br> of the closed beta</h3>
+    <button class="ls-hero-btn">
+      <span>Book a demo</span>
+      <span class="ls-blinking-dot"></span>
+    </button>
+  </div>
+
+  <!-- Footer block -->
+  <div class="ls-footer-container">
+    <div class="ls-footer-top">
+      <div class="ls-footer-title">Stay in Touch</div>
+      <div class="ls-footer-title">Think. Build. Repeat.</div>
+    </div>
+    <hr class="ls-footer-divider">
+    <div class="ls-footer-bottom">
+      <div class="ls-footer-socials">
+        <a href="#" aria-label="LinkedIn" class="ls-social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="#" aria-label="X" class="ls-social-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="ls-social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+      </div>
+      <nav class="ls-footer-links">
+        <a href="#about" class="ls-footer-link">About</a>
+        <a href="#skills" class="ls-footer-link">Features</a>
+        <a href="#projects" class="ls-footer-link">Pricing</a>
+        <a href="#contact" class="ls-footer-link">Contact</a>
+      </nav>
+      <div class="ls-footer-copyright">© 2026 Loopstack</div>
+    </div>
+  </div>
+
+  <!-- Giant wordmark -->
+  <div class="ls-logo-wrap">
+    <div class="ls-logo-text">Loopstack</div>
+  </div>
+
+  <!-- Background video -->
+  <div class="ls-video-container">
+    <video autoplay muted loop playsinline class="ls-video">
+      <source src="https://api.getlayers.ai/storage/v1/object/public/public/assets/loopstack-f8c64439bf/flower.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <p>© 2026 Ritam · Built with 💚 and clean code</p>
@@ -354,19 +427,121 @@
     mobileNav.classList.remove('open');
   }
 
-  /* ── CURSOR ── */
-  const cur = document.getElementById('cur');
-  const ring = document.getElementById('curRing');
-  let mx=0,my=0,rx=0,ry=0;
-  document.addEventListener('mousemove',e=>{
-    mx=e.clientX; my=e.clientY;
-    cur.style.left=(mx-5)+'px'; cur.style.top=(my-5)+'px';
-  });
-  (function animRing(){
-    rx+=(mx-rx-18)*.1; ry+=(my-ry-18)*.1;
-    ring.style.left=rx+'px'; ring.style.top=ry+'px';
-    requestAnimationFrame(animRing);
-  })();
+  /* ── CUSTOM CURSOR (Loopstack glassmorphism) ── */
+  const glassCard = document.getElementById('ls-glass-card');
+  const cursorRing = document.getElementById('ls-cursor-ring');
+
+  if (glassCard && cursorRing) {
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let cardX = mouseX, cardY = mouseY;
+    let ringX = mouseX, ringY = mouseY;
+    let isFirstMove = true;
+    let scale = 0, targetScale = 0;
+    let isHoveringInteractive = false;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      if (isFirstMove) {
+        cardX = mouseX; cardY = mouseY;
+        ringX = mouseX; ringY = mouseY;
+        isFirstMove = false;
+        glassCard.classList.add('active');
+        cursorRing.classList.add('active');
+      }
+      if (!isHoveringInteractive) targetScale = 1;
+    });
+
+    document.addEventListener('mouseleave', () => { targetScale = 0; });
+    document.addEventListener('mouseenter', () => { if (!isHoveringInteractive) targetScale = 1; });
+
+    // Expand ring + hide pill on interactive elements
+    document.addEventListener('mouseover', (e) => {
+      if (e.target.closest('button, a, .btn-primary, .btn-secondary, .btn-cv, .nav-cta, .ls-hero-btn, input, textarea, .form-submit')) {
+        isHoveringInteractive = true;
+        targetScale = 0;
+        cursorRing.classList.add('expanded');
+      }
+    });
+    document.addEventListener('mouseout', (e) => {
+      if (e.target.closest('button, a, .btn-primary, .btn-secondary, .btn-cv, .nav-cta, .ls-hero-btn, input, textarea, .form-submit')) {
+        isHoveringInteractive = false;
+        targetScale = 1;
+        cursorRing.classList.remove('expanded');
+      }
+    });
+
+    (function updateCursorPhysics() {
+      cardX += (mouseX - cardX) * 0.08;
+      cardY += (mouseY - cardY) * 0.08;
+      ringX = mouseX;
+      ringY = mouseY;
+      scale += (targetScale - scale) * 0.15;
+      const currentRingScale = cursorRing.classList.contains('expanded') ? 1.6 * scale : scale;
+      glassCard.style.transform = `translate3d(${cardX}px, ${cardY}px, 0) translate(-50%, -50%) scale(${scale})`;
+      cursorRing.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%) scale(${currentRingScale})`;
+      requestAnimationFrame(updateCursorPhysics);
+    })();
+  }
+
+  /* ── LOOPSTACK REVEAL ANIMATIONS ── */
+  const lsSection = document.getElementById('loopstack');
+  if (lsSection) {
+    // Split wordmark into letters
+    const logoText = lsSection.querySelector('.ls-logo-text');
+    if (logoText) {
+      const text = logoText.textContent.trim();
+      logoText.innerHTML = '';
+      [...text].forEach((char, index) => {
+        const wrapper = document.createElement('span');
+        wrapper.className = 'ls-letter-wrapper';
+        const inner = document.createElement('span');
+        inner.textContent = char === ' ' ? '\u00A0' : char;
+        inner.className = 'ls-letter-inner';
+        inner.style.animationDelay = `${index * 0.09}s`;
+        wrapper.appendChild(inner);
+        logoText.appendChild(wrapper);
+      });
+    }
+
+    // Split headline into words
+    const heroTitle = lsSection.querySelector('.ls-hero-title');
+    if (heroTitle) {
+      const html = heroTitle.innerHTML;
+      const parts = html.split(/(\s+|<br\s*\/?>)/i);
+      heroTitle.innerHTML = '';
+      let wordIndex = 0;
+      parts.forEach(part => {
+        if (part.trim() === '') {
+          heroTitle.appendChild(document.createTextNode(' '));
+        } else if (part.toLowerCase().startsWith('<br')) {
+          heroTitle.appendChild(document.createElement('br'));
+        } else {
+          const wrapper = document.createElement('span');
+          wrapper.className = 'ls-word-wrapper';
+          const inner = document.createElement('span');
+          inner.className = 'ls-word-inner';
+          inner.textContent = part;
+          inner.style.animationDelay = `${wordIndex * 0.1}s`;
+          wordIndex++;
+          wrapper.appendChild(inner);
+          heroTitle.appendChild(wrapper);
+        }
+      });
+    }
+
+    // Trigger animations when section scrolls into view
+    const lsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          lsSection.classList.add('ls-animate');
+          lsObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.15 });
+    lsObserver.observe(lsSection);
+  }
 
   /* ── SCROLL REVEAL ── */
   const ro = new IntersectionObserver(entries=>{
@@ -402,7 +577,7 @@
       const res = await fetch(`https://api.github.com/users/${GH_USERNAME}/repos?sort=updated&per_page=12`);
       if(!res.ok) throw new Error('GitHub API error');
       const repos = await res.json();
-      const filtered = repos.filter(r=>!r.fork).slice(0,6);
+      const filtered = repos.filter(r=>!r.fork && r.name !== 'ForgeFit-Ritam' && r.name !== 'photogalary').slice(0,6);
       document.getElementById('ghLoading').remove();
       if(filtered.length === 0){
         grid.innerHTML = '<p class="error-text">// No public repositories found yet.</p>';
